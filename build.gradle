@@ -1,0 +1,22 @@
+group 'it.me.tae.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit
+    testCompile "junit:junit:4.12"
+
+    // Mockito and its dependencies
+    testCompile "org.mockito:mockito-core:2.8.9"
+
+    // JUnitParams
+    testCompile "pl.pragmatists:JUnitParams:1.0.5"
+}
